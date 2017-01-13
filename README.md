@@ -1,6 +1,6 @@
 # hackathon-vuejs-1
 
-> We will create a vue.js app using vue-cli and jsonplaceholder (https://jsonplaceholder.typicode.com/)
+> We will create a vue.js app using [vue-cli](https://github.com/vuejs/vue-cli) and [jsonplaceholder](https://jsonplaceholder.typicode.com/)
 
 ## Initial setup
 
@@ -14,7 +14,7 @@ sudo apt install build-essential
 sudo node -v && npm -v
 ```
 
-You must set the correction permission do work correctly with nodejs. More info here: https://docs.npmjs.com/getting-started/fixing-npm-permissions#option-2-change-npms-default-directory-to-another-directory
+You must set the correction permission do work correctly with nodejs. More info [here](https://docs.npmjs.com/getting-started/fixing-npm-permissions#option-2-change-npms-default-directory-to-another-directory)
 
 ```bash
 # install vue-cli
