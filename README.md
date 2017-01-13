@@ -1,6 +1,15 @@
 # hackathon-vuejs-1
 
-> A Vue.js project
+> We will create a vue.js app using vue-cli and jsonplaceholder (https://jsonplaceholder.typicode.com/)
+
+## Initial setup
+
+> You must have npm installed in your machine.
+
+```bash
+# install vue-cli
+npm install -g vue-cli
+```
 
 ## Build Setup
 
