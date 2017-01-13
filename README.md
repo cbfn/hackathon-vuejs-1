@@ -16,6 +16,7 @@ sudo node -v && npm -v
 
 You must set the correction permission do work correctly with nodejs. More info [here](https://docs.npmjs.com/getting-started/fixing-npm-permissions#option-2-change-npms-default-directory-to-another-directory)
 
+### Install vue-cli
 ```bash
 # install vue-cli
 npm install -g vue-cli
