@@ -7,6 +7,16 @@
 > You must have npm installed in your machine.
 
 ```bash
+# install npm and node
+curl -sL https://deb.nodesource.com/setup_7.x | sudo -E bash -
+sudo apt install nodejs
+sudo apt install build-essential
+sudo node -v && npm -v
+```
+
+You must set the correction permission do work correctly with nodejs. More info here: https://docs.npmjs.com/getting-started/fixing-npm-permissions#option-2-change-npms-default-directory-to-another-directory
+
+```bash
 # install vue-cli
 npm install -g vue-cli
 ```
