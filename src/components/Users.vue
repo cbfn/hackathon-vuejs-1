@@ -14,15 +14,11 @@
 
 <script>
 import axios from 'axios'
-import Gravatar from './util/Gravatar'
 
 const ENDPOINT = 'https://jsonplaceholder.typicode.com'
 
 export default {
   name: 'users',
-  components: {
-    Gravatar
-  },
   data () {
     return {
       users: []

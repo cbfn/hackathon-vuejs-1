@@ -9,34 +9,23 @@
         <span class="date">{{ user.email }}</span>
       </div>
       <div class="description">
-        {{ user.company.bs }} at {{ user.company.name }}
+        <strong>Website:</strong> {{ user.website }}
       </div>
-    </div>
-    <div class="extra content">
-      <a>
-        <i class="user icon"></i>
-        22 Friends
-      </a>
     </div>
   </div>
 </template>
 
 <script>
 import axios from 'axios'
-import Gravatar from './util/Gravatar'
 const ENDPOINT = 'https://jsonplaceholder.typicode.com'
 
 export default {
   name: 'user',
-  components: {
-    Gravatar
-  },
   data () {
     return {
       user: []
     }
   },
-
   mounted () {
     axios.get(ENDPOINT + '/users?id=' + this.$route.params.id).then((response) => {
       this.$set(this, 'user', response.data[0])
