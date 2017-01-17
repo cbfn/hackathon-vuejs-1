@@ -5,7 +5,7 @@
       <div class="right floated content">
         <router-link class="ui button" :to="{ name: 'user', params: { id: user.id }}">Edit</router-link>
       </div>
-      <img src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50" alt="avatar" class="ui avatar image">
+      <gravatar :src="user.email" default="retro" size="290" alt="avatar" class="ui avatar image"/>
       <div class="content">
         {{ user.name }}
       </div>
@@ -15,6 +15,7 @@
 
 <script>
 import axios from 'axios'
+import Gravatar from './util/Gravatar'
 
 const ENDPOINT = 'https://jsonplaceholder.typicode.com'
 
@@ -24,6 +25,9 @@ export default {
     return {
       users: []
     }
+  },
+  components: {
+    Gravatar
   },
   mounted () {
     axios.get(ENDPOINT + '/users').then((response) => {

@@ -5,6 +5,7 @@ import App from './App'
 import VueRouter from 'vue-router'
 import Users from './components/Users'
 import User from './components/User'
+import 'font-awesome/css/font-awesome.css'
 
 Vue.use(VueRouter)
 
