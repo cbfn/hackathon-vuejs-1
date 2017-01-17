@@ -1,17 +1,18 @@
 <template>
-  <div class="ui card centered">
-    <i v-show="loading" class="fa fa-circle-o-notch fa-spin fa-3x fa-fw"></i>
-    <span v-show="loading" class="sr-only">Loading...</span>
-    <div class="image">
-      <gravatar :src="user.email" default="retro" size="290" />
-    </div>
-    <div class="content">
-      <a class="header">{{ user.name }}</a>
-      <div class="meta">
-        <span class="date">{{ user.email }}</span>
+  <div class="ui center aligned container">
+    <i v-if="loading" class="fa fa-circle-o-notch fa-spin fa-3x fa-fw"></i>
+    <div v-else="loading"  class="ui card centered">
+      <div class="image">
+        <gravatar :src="user.email" default="retro" size="290" />
       </div>
-      <div class="description">
-        <strong>Website:</strong> {{ user.website }}
+      <div class="content">
+        <a class="header">{{ user.name }}</a>
+        <div class="meta">
+          <span class="date">{{ user.email }}</span>
+        </div>
+        <div class="description">
+          <strong>Website:</strong> {{ user.website }}
+        </div>
       </div>
     </div>
   </div>
@@ -28,7 +29,7 @@ export default {
   data () {
     return {
       user: [],
-      loading: true
+      loading: false
     }
   },
   components: {

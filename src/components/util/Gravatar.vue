@@ -1,5 +1,5 @@
 <template>
-  <img :src="url" alt="avatar">
+  <img :src="url" alt="avatar" :width="imageSize">
 </template>
 
 <script>
@@ -40,6 +40,10 @@ export default {
 
         return this.endpoint + hash + size + defPicture
       }
+    },
+    imageSize () {
+      let size = this.size
+      return size
     }
   }
 }
