@@ -1,0 +1,4 @@
+language: node_js
+env: TRAVIS_CI=true
+node_js:
+  - "4"
