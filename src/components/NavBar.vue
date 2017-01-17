@@ -2,7 +2,7 @@
   <div class="ui fixed inverted menu">
     <div class="ui container">
       <router-link to="/" class="header item">Postfy</router-link>
-      <router-link to="/users" class="item">All users</router-link>
+      <router-link to="/users" class="item">Users</router-link>
     </div>
   </div>
 </template>

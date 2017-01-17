@@ -1,7 +1,9 @@
 <template>
   <div class="ui card centered">
+    <i v-show="loading" class="fa fa-circle-o-notch fa-spin fa-3x fa-fw"></i>
+    <span v-show="loading" class="sr-only">Loading...</span>
     <div class="image">
-      <img src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50">
+      <gravatar :src="user.email" default="retro" size="290" />
     </div>
     <div class="content">
       <a class="header">{{ user.name }}</a>
@@ -17,17 +19,25 @@
 
 <script>
 import axios from 'axios'
+import Gravatar from './util/Gravatar'
+
 const ENDPOINT = 'https://jsonplaceholder.typicode.com'
 
 export default {
   name: 'user',
   data () {
     return {
-      user: []
+      user: [],
+      loading: true
     }
   },
+  components: {
+    Gravatar
+  },
   mounted () {
+    this.loading = true
     axios.get(ENDPOINT + '/users?id=' + this.$route.params.id).then((response) => {
+      this.loading = false
       this.$set(this, 'user', response.data[0])
     }).catch((error) => {
       console.log(error)
