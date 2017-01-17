@@ -5,7 +5,7 @@
       <div class="image">
         <gravatar :src="user.email" default="retro" size="290" />
       </div>
-      <div class="content">
+      <div class="content left aligned">
         <a class="header">{{ user.name }}</a>
         <div class="meta">
           <span class="date">{{ user.email }}</span>
