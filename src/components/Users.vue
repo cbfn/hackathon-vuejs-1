@@ -1,5 +1,6 @@
 <template>
   <div class="ui middle aligned divided list">
+    <h1>Lista de usuários</h1>
     <div class="item" v-for="user in users">
       <div class="right floated content">
         <router-link class="ui button" :to="{ name: 'user', params: { id: user.id }}">Edit</router-link>
@@ -36,29 +37,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h1, h2 {
-  font-weight: normal;
-  margin: 0;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-a {
-  color: #42b983;
-}
-
-article {
-  border: 1px solid #ddd;
-  margin-bottom: 10px;
-  padding: 10px;
-  border-radius: 4px;
+h1 {
+  font-weight: 400;
 }
 </style>
