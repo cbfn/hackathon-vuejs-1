@@ -8,7 +8,7 @@
       <div class="content left aligned">
         <a class="header">{{ user.name }}</a>
         <div class="meta">
-          <span class="date">{{ user.email }}</span>
+          <span class="date">{{ normalizeEmail }}</span>
         </div>
         <div class="description">
           <strong>Website:</strong> {{ user.website }}
@@ -43,6 +43,14 @@ export default {
     }).catch((error) => {
       console.log(error)
     })
+  },
+  computed: {
+    normalizeEmail () {
+      let email = this.user.email
+      if (typeof email !== 'undefined') {
+        return email.toLowerCase()
+      }
+    }
   }
 }
 </script>
