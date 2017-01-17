@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/cnascimentord/hackathon-vuejs-1.svg?branch=master)](https://travis-ci.org/cnascimentord/hackathon-vuejs-1)
 # hackathon-vuejs-1
 
 > We will create a vue.js app using [vue-cli](https://github.com/vuejs/vue-cli) and [jsonplaceholder](https://jsonplaceholder.typicode.com/)
@@ -36,9 +37,6 @@ npm run build
 
 # run unit tests
 npm run unit
-
-# run e2e tests
-npm run e2e
 
 # run all tests
 npm test
