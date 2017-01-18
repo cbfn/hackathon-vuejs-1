@@ -1,0 +1,10 @@
+{
+ "name": "hackathon-vuejs-1",
+ "version": "1.0.0",
+ "description": "hackathon do 1 meetup de vue.js floripa",
+ "author": "Christian Nascimento",
+ "private": true,
+ "scripts": {
+   "postinstall": "npm install express"
+ }
+}
