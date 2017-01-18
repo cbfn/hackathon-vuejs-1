@@ -19,6 +19,7 @@
     "md5": "^2.2.1",
     "npm": "^4.1.1",
     "vue": "^2.1.0",
+    "vue-progressbar": "^0.7.0",
     "vue-router": "^2.1.1"
   },
   "devDependencies": {

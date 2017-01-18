@@ -1,6 +1,6 @@
 <template>
   <div class="ui middle aligned divided list">
-    <h1>Lista de usuários</h1>
+    <h1>User list</h1>
     <div class="item" v-for="user in users">
       <div class="right floated content">
         <router-link class="ui button" :to="{ name: 'user', params: { id: user.id }}">Edit</router-link>
@@ -29,7 +29,7 @@ export default {
   components: {
     Gravatar
   },
-  mounted () {
+  created () {
     axios.get(ENDPOINT + '/users').then((response) => {
       this.$set(this, 'users', response.data)
     }).catch((error) => {
