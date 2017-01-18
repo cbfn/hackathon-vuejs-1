@@ -3,6 +3,8 @@
 
 > We will create a vue.js app using [vue-cli](https://github.com/vuejs/vue-cli) and [jsonplaceholder](https://jsonplaceholder.typicode.com/)
 
+DEMO: http://hackathon-vuejs-1.herokuapp.com/#/
+
 ## Initial setup
 
 > You must have npm installed in your machine.
