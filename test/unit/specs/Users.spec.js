@@ -8,6 +8,6 @@ describe('Users.vue', () => {
       render: (h) => h(Users)
     })
     expect(vm.$el.querySelector('.list h1').textContent)
-      .to.equal('Lista de usuários')
+      .to.equal('User list')
   })
 })
