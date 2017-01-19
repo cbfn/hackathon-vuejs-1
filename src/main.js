@@ -5,6 +5,7 @@ import App from './App'
 import VueRouter from 'vue-router'
 import Users from './components/Users'
 import User from './components/User'
+import Home from './components/Home'
 import 'font-awesome/css/font-awesome.css'
 import VueProgressBar from 'vue-progressbar'
 
@@ -25,7 +26,7 @@ Vue.use(VueProgressBar, {
 // Vue.extend(), or just a component options object.
 // We'll talk about nested routes later.
 const routes = [
-  { path: '/', component: Users },
+  { path: '/', component: Home },
   { path: '/users', component: Users },
   {
     path: '/user/:id',

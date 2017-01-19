@@ -1,7 +1,7 @@
 <template>
   <div class="ui fixed inverted menu">
     <div class="ui container">
-      <router-link to="/" class="header item logo">Postfy</router-link>
+      <router-link to="/" class="header item logo">Hackthon</router-link>
       <router-link to="/users" class="item">Users</router-link>
     </div>
   </div>
