@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/cnascimentord/hackathon-vuejs-1.svg?branch=master)](https://travis-ci.org/cnascimentord/hackathon-vuejs-1)
+[![Build Status](https://travis-ci.org/f4b140/hackathon-vuejs-1.svg?branch=master)](https://travis-ci.org/f4b140/hackathon-vuejs-1)
 # hackathon-vuejs-1
 
 > We will create a vue.js app using [vue-cli](https://github.com/vuejs/vue-cli) and [jsonplaceholder](https://jsonplaceholder.typicode.com/)
